@@ -157,6 +157,7 @@ void g_printerr(const gchar *format, ...);
 gint g_unichar_to_utf8(gunichar c, gchar *dst);
 gchar *g_locale_to_utf8(const gchar *opsysstring, size_t len,
         size_t *bytes_read, size_t *bytes_written, GError **error);
+gchar * g_utf8_casefold(const gchar *str, ssize_t len);
 
 /* GString */
 GString *g_string_new(const gchar *init);
